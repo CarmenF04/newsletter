@@ -33,7 +33,7 @@ services:
     container_name: db
     image: mariadb:latest
     environment:
-      MYSQL_DATABASE: newletters
+      MYSQL_DATABASE: newsletter
       MYSQL_USER: db_user
       MYSQL_PASSWORD: mijn_p@ss#
       MYSQL_ROOT_PASSWORD: 4dy5qwtrsag#!sad

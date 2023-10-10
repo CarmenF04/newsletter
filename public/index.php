@@ -8,19 +8,20 @@
 </head>
 
 <body>
-    <h1>Aanmelden voor Nieuwsbrief</h1>
-    <form action="/verwerk_formulier.php" method="post">
-        <label for="email">E-mailadres:</label>
-        <input type="email" id="email" name="email" required><br><br>
+    <h1>Reservering</h1>
+    <form method="post" action="verwerk_reservering.php">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" required><br>
 
-        <label for="nieuwsbrief">Kies nieuwsbrieftype(s):</label><br>
-        <input type="checkbox" id="nieuwsbrief1" name="nieuwsbrief[]" value="Nieuwsbrief 1">
-        <label for="nieuwsbrief1">Nieuwsbrief 1</label><br>
+        <label>Uit eten:</label>
+        <input type="radio" name="uit_eten" value="1"> Ja
+        <input type="radio" name="uit_eten" value="0"> Nee<br>
 
-        <input type="checkbox" id="nieuwsbrief2" name="nieuwsbrief[]" value="Nieuwsbrief 2">
-        <label for="nieuwsbrief2">Nieuwsbrief 2</label><br><br>
+        <label>Vervoer:</label>
+        <input type="radio" name="vervoer" value="1"> Ja
+        <input type="radio" name="vervoer" value="0"> Nee<br>
 
-        <input type="submit" value="Aanmelden">
+        <input type="submit" value="Reserveren">
     </form>
 </body>
 
